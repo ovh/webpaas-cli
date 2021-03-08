@@ -1,0 +1,6 @@
+/vendor
+/cli
+/web/installer
+/web/manifest.json
+/web/*.phar
+/.environment
