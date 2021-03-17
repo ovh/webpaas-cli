@@ -1,6 +1,6 @@
 # webpaas
 
-`webpaas` is the CLI for the OVHcloud WebPaaS, powered by Platform.sh.
+`webpaas` is the CLI for the OVHcloud Web PaaS, powered by Platform.sh.
 
 It is based on the [Platform.sh CLI](https://github.com/platformsh/platformsh-cli) with a modified configuration file.
 
@@ -49,7 +49,7 @@ Other customization is available via environment variables:
 * `OVHCLOUD_WEBPAAS_CLI_UPDATES_CHECK`: set to 0 to disable the automatic updates check
 * `OVHCLOUD_WEBPAAS_CLI_AUTO_LOAD_SSH_CERT`: set to 0 to disable automatic loading of an SSH certificate when running login or SSH commands
 * `CLICOLOR_FORCE`: set to 1 or 0 to force colorized output on or off, respectively
-* `http_proxy` or `https_proxy`: specify a proxy for connecting to the WebPaaS
+* `http_proxy` or `https_proxy`: specify a proxy for connecting to the Web PaaS
 
 ## Updating
 
