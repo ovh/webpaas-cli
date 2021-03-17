@@ -4,3 +4,4 @@
 /web/manifest.json
 /web/*.phar
 /.environment
+/*.phar

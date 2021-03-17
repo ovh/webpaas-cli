@@ -5,23 +5,9 @@ hooks:
   build: |
     set -e
 
-    export tag="$(cat latest-tag)"
     export filename=webpaas.phar
 
-    [ -d cli ] && rm -rf cli
-    git clone --branch "$tag" https://github.com/platformsh/platformsh-cli.git cli
-
-    cp config.yaml cli/config.yaml
-    cd cli/vendor-bin/box
-    composer install --no-interaction
-    cd -
-    cd cli
-    export version="$(git describe --tags)"
-    composer install --no-dev --no-interaction
-    mkdir -p vendor/bin
-    ln -s "$(realpath vendor-bin/box/vendor/bin/box)" vendor/bin/box
-    ./bin/platform self:build --no-composer-rebuild --replace-version="$version" --yes --output ../web/"$filename"
-    cd -
+    ./build.sh ./web/"$filename"
 
     cat << EOF > .environment
     export CLI_URL_PATH=$filename
