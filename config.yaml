@@ -10,7 +10,7 @@
 
 # Metadata about the CLI application itself.
 application:
-  name: 'OVHcloud WebPaaS CLI'
+  name: 'OVHcloud Web PaaS CLI'
   slug: 'ovhcloud-webpaas'
 
   # The version number is displayed in 'platform --version' and other places.
@@ -26,7 +26,7 @@ application:
   user_config_dir: '.webpaas-cli'
   user_state_file: 'state.json'
   env_prefix: 'OVHCLOUD_WEBPAAS_CLI_'
-  tmp_sub_dir: 'ovhcloud-webpaas-tmp'
+  tmp_sub_dir: 'webpaas-cli-tmp'
   github_repo: ~
   release_branch: 'ovh-eu'
 
@@ -81,8 +81,8 @@ local:
 
 # Details about the cloud service that the CLI works with.
 service:
-  name: 'OVHcloud WebPaaS' # Powered by Platform.sh
-  slug: 'ovhcloud-webpaas'
+  name: 'OVHcloud Web PaaS' # Powered by Platform.sh
+  slug: 'ovhcloud-web-paas'
   env_prefix: 'PLATFORM_'
   header_prefix: 'X-Platform'
   app_config_file: '.platform.app.yaml'
