@@ -6,8 +6,9 @@ hooks:
     set -e
 
     export filename=webpaas.phar
+    export version="$(cat latest-tag)"
 
-    ./build.sh ./web/"$filename"
+    ./build.sh web/"$filename" "$version"
 
     cat << EOF > .environment
     export CLI_URL_PATH=$filename
