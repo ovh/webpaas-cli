@@ -56,8 +56,6 @@ application:
     - project:create
     - project:delete
     - user:add
-    - ssh-cert:info
-    - ssh-cert:load
 
   # Experimental commands (a list of full command names). Enable these in the
   # user config file: the array 'enable_commands' inside the 'experimental'
@@ -140,7 +138,7 @@ api:
 
   # Certifier API URL.
   # Overridden by {application.env_prefix}CERTIFIER_URL env var.
-  certifier_url: ~
+  certifier_url: 'https://eu.auth.webpaas.ovhcloud.com/ssh'
 
   # Wildcard domains for SSH configuration.
   # Can be replaced by a single value using the {application.env_prefix}SSH_DOMAIN_WILDCARD env var.
@@ -148,7 +146,7 @@ api:
 
   # Whether to auto-load an SSH certificate on login and SSH commands.
   # Overridden by {application.env_prefix}AUTO_LOAD_SSH_CERT env var
-  auto_load_ssh_cert: false
+  auto_load_ssh_cert: true
 
   # Whether the API supports project invitations.
   invitations: false
