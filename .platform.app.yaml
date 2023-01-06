@@ -41,7 +41,7 @@ source:
     update:
       command: |
         set -e
-        git clone https://github.com/platformsh/platformsh-cli.git cli
+        git clone https://github.com/platformsh/legacy-cli.git cli
         cd cli
         export latest="$(git describe --tags --abbrev=0)"
         echo "$latest" > ../latest-tag

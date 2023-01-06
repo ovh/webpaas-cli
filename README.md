@@ -2,7 +2,7 @@
 
 `webpaas` is the CLI for the OVHcloud Web PaaS, powered by Platform.sh.
 
-It is based on the [Platform.sh CLI](https://github.com/platformsh/platformsh-cli) with a modified configuration file.
+It is based on the [Platform.sh CLI](https://github.com/platformsh/legacy-cli) with a modified configuration file.
 
 ## Installation
 
@@ -30,11 +30,11 @@ All commands have help, which you can see by running `webpaas help [cmd]` or `we
 webpaas projects -h
 ```
 
-See the [Platform.sh CLI README](https://github.com/platformsh/platformsh-cli/blob/3.x/README.md) for more detailed usage information.
+See the [Platform.sh CLI README](https://github.com/platformsh/legacy-cli/blob/main/README.md) for more detailed usage information.
 
 ## Customization
 
-You can configure the CLI via the user configuration file `~/.webpaas-cli/config.yaml`. The possible keys and their default values are listed in the [Platform.sh CLI README](https://github.com/platformsh/platformsh-cli/blob/3.x/README.md#customization).
+You can configure the CLI via the user configuration file `~/.webpaas-cli/config.yaml`. The possible keys and their default values are listed in the [Platform.sh CLI README](https://github.com/platformsh/legacy-cli/blob/main/README.md#customization).
 
 Other customization is available via environment variables:
 

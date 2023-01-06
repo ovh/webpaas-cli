@@ -10,9 +10,9 @@ if [ -d cli ]; then
     rm -rf cli
 fi
 if [ -n "$version" ]; then
-    git clone --branch "$version" https://github.com/platformsh/platformsh-cli.git cli
+    git clone --branch "$version" https://github.com/platformsh/legacy-cli.git cli
 else
-    git clone https://github.com/platformsh/platformsh-cli.git cli
+    git clone https://github.com/platformsh/legacy-cli.git cli
     export version="$(git describe --tags)"
 fi
 cp config.yaml cli/config.yaml
