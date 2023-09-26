@@ -15,11 +15,7 @@ $version = getenv('CLI_VERSION', true);
 
 $pharUrl = getenv('CLI_URL_PATH', true) ?: 'pstaging.phar';
 $pharHash = hash_file('sha256', __DIR__ . '/' . ltrim(getenv('CLI_URL_PATH', true), '/'));
-if ($timestamp = getenv('CLI_BUILD_DATE', true)) {
-    $pharDate = date('c', is_int($timestamp) ? $timestamp : strtotime($timestamp));
-} else {
-    $pharDate = false;
-}
+$pharDate = $timestamp = getenv('CLI_BUILD_DATE', true) ? date('c', is_int($timestamp) ? $timestamp : strtotime($timestamp)) : false;
 
 $baseUrl = 'https://' . $_SERVER['HTTP_HOST'];
 
